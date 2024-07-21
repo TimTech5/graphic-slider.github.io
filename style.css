@@ -382,6 +382,7 @@ animation: timeRunning 2s linear 1 forwards;
 
 
 @media all and (max-width: 678px){
+
     .carousel-body .list .item .content{
         padding-right: 0;
     }
@@ -393,14 +394,16 @@ animation: timeRunning 2s linear 1 forwards;
     
 
     .carousel-body .list .item img{
-        width:360px;
-        height:420px;
+        
+        width:280px;
+        height:320px;
         object-fit: cover;
         position: absolute;
-        right:9px;
-        top: 40px;
+        right:10px;
+        top: 100px;
         border-radius: 16px;
         border:2px solid rgba(11, 15, 15, 0.1);
+        z-index: 600;
     }
 
 
@@ -411,7 +414,7 @@ animation: timeRunning 2s linear 1 forwards;
         width:max-content;
         z-index:100;
         display:flex;
-        gap:5px;
+        gap:1px;
     }
 
     .arrows{
@@ -446,10 +449,36 @@ animation: timeRunning 2s linear 1 forwards;
         border:1px solid #eee; 
         display: none;
     
-    
-    
 }
 
+
+.thumbnail .item{
+    width:120px;
+    height:160px;
+    flex-shrink: 0;
+    position:relative;
+    top:40px;
+  
+    
+
+}
+
+.thumbnail .item img{
+    width:60%;
+    height:44%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.thumbnail .item .content{
+    position: absolute;
+    bottom: 50px;
+    left:10px;
+    right:10px;
+}
+.thumbnail .item .content .title{
+    font-weight: bold;
+}
 
 
 
